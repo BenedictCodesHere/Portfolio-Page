@@ -7,23 +7,17 @@
   box-sizing: border-box;
 }
 
+/* Variables */
 :root {
---primary: rgb(23, 107, 37);
+--primary: rgb(28, 156, 49);
 --secondary: rgb(162, 207, 90);
 --tertiary: rgba(49, 52, 61, 1);
---dark: rgb(72, 77, 99);
---light: rgba(238, 238, 247, 1);
+--dark: rgb(62, 66, 83);
+--light: rgba(238, 238, 247, 0.953);
 }
+/* END OF VARIABLES */
 
 body {
- /* display: grid;
-  grid-template-rows: 1fr 2fr 3fr 9fr 2fr;
-  grid-template-areas: "header"
-                      "hero-banner"
-                      "main"
-                      "main"
-                       "main";
-                       */
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,7 +39,6 @@ p {
   font-size: 1.5rem;
   margin-left: 5px;
 }
-
 
 /* END OF GLOBAL STYLES */
 
@@ -116,7 +109,6 @@ main {
 /* Hero Banner */
 
 .hero-banner {
- /* grid-area: "hero-banner"; */
   
  background: rgb(84, 117, 22);
  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -171,15 +163,6 @@ display: inline;
   max-width: 88%;
   margin: 0 auto;
   grid-area: "main";
-  
-  
-  /* display: grid;
-  grid-template-rows: 15fr 37fr 8fr;
-  grid-template-areas: "about"
-                        "work"
-                        "contact";
-  height: 81vh; 
-  */
 
 }
 
@@ -279,25 +262,25 @@ justify-content: center;
 
 }
 
-.buddy {background-image: url(../images/02-run-buddy.jpg)}
+.project-4 {background-image: url(../images/02-run-buddy.jpg)}
 
-.lego {
+.seo-page {
   background-image: url(../images/seo-page.png);
   
   background-size: cover;
 }
 
-.corgis {
+.project-3 {
   background-image: url(../images/02-portfolio-2.jpg)
 }
 
-.bacon {
+.study-guide {
   background-image: url(../images/study-guide.png);
-  zoom: 70%;
+  zoom: 100%;
   background-size: cover;
 }
 
-.puzzle {
+.project-5 {
   background-image: url(../images/02-portfolio-4.jpg);
 }
 
@@ -335,6 +318,9 @@ justify-content: center;
     text-align: left;
     font-size: 7vw;
   }
+
+  
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -376,24 +362,5 @@ justify-content: center;
     align-items: flex-start;
   }
 }
-/*
-#about {
-  grid-area: "about";
-  background-color: blue;
-
-}
-
-#work {
-  grid-area: "work";
-   display: grid; 
-  background-color: purple
-}
-
-#contact {
- grid-area: "contact"; 
-background-color: orange;
-}
-
-*/
 
 /* END OF MAIN */
